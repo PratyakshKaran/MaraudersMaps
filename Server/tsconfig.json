@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"declaration": true
+	},
+	"files": [
+        "src/app.ts",
+        "src/utility/serve-file.ts",
+		"typings/tsd.d.ts"
+	]
+}
