@@ -7,6 +7,7 @@
 	"files": [
         "src/app.ts",
         "src/utility/serve-file.ts",
+        "src/utility/server-helpers.ts",
 		"typings/tsd.d.ts"
 	]
 }
