@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import maraudersmaps.maraudersmaps.Globals;
 import maraudersmaps.maraudersmaps.R;
 
 public class FirstActivity extends FragmentActivity
@@ -16,7 +17,7 @@ public class FirstActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SharedPreferences preference = getPreferences(MODE_PRIVATE);
+        SharedPreferences preference = getSharedPreferences(Globals.PREFERENCE_NAME, MODE_PRIVATE);
         boolean firstTime = preference.getBoolean("firstTime", true);
 
         if (firstTime)
